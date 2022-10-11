@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "275658775261",
+    "project_id": "dance101-23263",
+    "storage_bucket": "dance101-23263.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275658775261:android:4e5f3c2b2fc17a3cc15934",
+        "android_client_info": {
+          "package_name": "net.fluttertutorial.flutter_login_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275658775261-punmd37e2ut2ctae114rj8l6bksm0veq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQZK3fjWgEZ8zppfGhwLOS6DrsbjadQ6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275658775261-punmd37e2ut2ctae114rj8l6bksm0veq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

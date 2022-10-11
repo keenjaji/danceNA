@@ -1,41 +1,44 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_ui/pages/login_page.dart';
+import 'package:flutter_login_ui/pages/main_page.dart';
+import 'package:hexcolor/hexcolor.dart';
 
-void main() => runApp(MyApp());
+import 'pages/splash_screen.dart';
 
-class MyApp extends StatelessWidget {
+void main() {
+  runApp(LoginUiApp());
+}
+
+class LoginUiApp extends StatelessWidget {
+  Color _primaryColor = HexColor('#DC54FE');
+  Color _accentColor = HexColor('#8A02AE');
+
+  // Design color
+  // Color _primaryColor= HexColor('#FFC867');
+  // Color _accentColor= HexColor('#FF3CBD');
+
+  // Our Logo Color
+  // Color _primaryColor= HexColor('#D44CF6');
+  // Color _accentColor= HexColor('#5E18C8');
+
+  // Our Logo Blue Color
+  //Color _primaryColor= HexColor('#651BD2');
+  //Color _accentColor= HexColor('#320181');
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
+      title: 'Flutter Login UI',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: _primaryColor,
+        accentColor: _accentColor,
+        scaffoldBackgroundColor: Colors.grey.shade100,
+        primarySwatch: Colors.grey,
       ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
+      //home: SplashScreen(title: 'welcome'),
+      home: SplashScreen(title: 'welcome'),
     );
   }
 }
